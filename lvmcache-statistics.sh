@@ -24,7 +24,7 @@
 ##################################################################
 set -o nounset
 
-LVCACHED=/dev/vg00/lvol0
+LVCACHED=/dev/vg-VMs/lv-VMs
 
 RESULT=$(dmsetup status ${LVCACHED})
 if [ $? -ne 0 ]; then
